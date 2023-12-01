@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         binding.temperatureTextView.text = "${weather.main.temp.toString()}°C"
         //icon
 
+        /*
         val image = binding.weatherIcon
         if (weather.weather[0].description == "overcast clouds")
             image.setImageResource(R.drawable.cloudy)
@@ -64,9 +65,7 @@ class MainActivity : AppCompatActivity() {
         else if (weather.weather[0].description == "scattered clouds")
             image.setImageResource(R.drawable.clouds)
 
-
-
-
+         */
         binding.weatherTextView.text = weather.weather[0].description
         binding.humidityTextView.text = "Humidity : ${weather.main.humidity}"
         binding.pressureTextView.text = "Pressure : ${weather.main.pressure}"
